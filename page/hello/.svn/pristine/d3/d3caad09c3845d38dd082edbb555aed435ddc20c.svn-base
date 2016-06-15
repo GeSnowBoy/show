@@ -1,0 +1,901 @@
+@charset "utf-8";
+body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+  overflow: hidden;
+  background-image: url(../img/p1bg.jpg);
+}
+
+
+/*********************************************************/
+
+.tag-music-on {
+  -webkit-animation: flatRotate 2s linear infinite;
+}
+
+.branch,
+.dialog,
+.page {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.dialog {
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+}
+
+.branch {
+  font-size: 3rem;
+  color: #fff;
+}
+
+
+/*loading 菊花*/
+
+.loading-div {
+  background: url(data:image/gif;base64,R0lGODlhGQAZAKIEAMzMzJmZmTMzM2ZmZgAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQFAAAEACwAAAAAGQAZAAADVki63P4wSEiZvLXemRf4yhYoQ0l9aMiVLISCDms+L/DIwwnfc+c3qZ9g6Hn5hkhF7YgUKI2dpvNpExJ/WKquSoMCvd9geDeuBpcuGFrcQWep5Df7jU0AACH5BAUAAAQALAoAAQAOABQAAAMwSLDU/iu+Gdl0FbTAqeXg5YCdSJCBuZVqKw5wC8/qHJv2IN+uKvytn9AnFBCHx0cCACH5BAUAAAQALAoABAAOABQAAAMzSLoEzrC5F9Wk9YK6Jv8gEYzgaH4myaVBqYbfIINyHdcDI+wKniu7YG+2CPI4RgFI+EkAACH5BAUAAAQALAQACgAUAA4AAAMzSLrcBNDJBeuUNd6WwXbWtwnkFZwMqUpnu6il06IKLChDrsxBGufAHW0C1IlwxeMieEkAACH5BAUAAAQALAEACgAUAA4AAAM0SLLU/lAtFquctk6aIe5gGA1kBpwPqVZn66hl1KINPDRB3sxAGufAHc0C1IkIxcARZ4QkAAAh+QQFAAAEACwBAAQADgAUAAADMUhK0vurSfiko8oKHC//yyCCYvmVI4cOZAq+UCCDcv3VM4cHCuDHOZ/wI/xxigDQMAEAIfkEBQAABAAsAQABAA4AFAAAAzNIuizOkLgZ13xraHVF1puEKWBYlUP1pWrLBLALz+0cq3Yg324PAUAXcNgaBlVGgPAISQAAIfkEBQAABAAsAQABABQADgAAAzRIujzOMBJHpaXPksAVHoogMlzpZWK6lF2UjgobSK9AtjSs7QTg8xCfELgQ/og9I1IxXCYAADs=) no-repeat center center;
+  width: 25px;
+  height: 25px;
+  background-size: 100% 100%;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  outline: 1px solid red;
+}
+
+.btn-common {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 8rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  font-size: 1.8rem;
+  color: #fff;
+  text-align: center;
+}
+
+.btn-next {
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.btn-prev {
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.btn-touchable.touched {
+  background: rgba(0, 0, 0, 0.3);
+  margin-bottom: -2px;
+  margin-top: -2px;
+}
+
+
+/******************************************************************/
+
+.p0 {
+  background: #000;
+  display: none;
+  z-index: 2000;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.p0-loading {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.p0-process {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  top: 65%;
+  text-align: center;
+  width: 100%;
+}
+
+img {
+  display: block;
+}
+
+
+/******************************************************************/
+
+.p1 {
+  background: url(../img/p1bg.jpg);
+  background-size: auto 100%;
+}
+
+.pNbg {
+  height: 100%;
+  position: relative;
+  display: block;
+}
+
+.pN-shan {
+  height: 100%;
+  position: relative;
+}
+
+.p1-woman {
+  height: 30%;
+  position: absolute;
+  top: 45%;
+  left: 44%;
+  transition: top 1.5s;
+  -webkit-transition: top 1.5s;
+}
+
+.p1-touying {
+  height: 20%;
+  position: absolute;
+  top: 45%;
+  left: 40%;
+}
+
+.pN-road {
+  height: 32%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.pNbg-active {
+  -webkit-animation: p1bg-action 9s linear both;
+  animation: p1bg-action 9s linear both;
+}
+
+.pN-road-active {
+  -webkit-animation: road-action 9s linear both;
+  animation: road-action 9s linear both;
+}
+
+.pN-gonglu-active {
+  -webkit-animation: p1-gonglu-action 9s linear both;
+  animation: p1-gonglu-action 9s linear both;
+}
+
+.pN-nvshen-active {
+  -webkit-animation: p3-nvshen-action 9s linear both;
+  animation: p3-nvshen-action 9s linear both;
+}
+
+.pN-yue {
+  -webkit-animation: p3-yue-action 9s linear both;
+  animation: p3-yue-action 9s linear both;
+}
+
+.pNman {
+  -webkit-animation: p3man-action 9s linear both;
+  animation: p3man-action 9s linear both;
+}
+
+.pNWoman {
+  -webkit-animation: p3Woman-action 9s linear both;
+  animation: p3Woman-action 9s linear both;
+}
+
+.pN-guang {
+  -webkit-animation: p1-guang-action 0.9s linear infinite;
+  animation: p1-guang-action 0.9s linear infinite;
+}
+
+.pN-text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.pN-text1 {
+  height: 37.1%;
+  position: absolute;
+  top: 5%;
+  transition: transform 1.5s;
+  -webkit-transition: -webkit-transform 1.5s;
+}
+
+.p1-text1 {
+  height: 30%;
+  left: 5%;
+}
+
+.p1-text2 {
+  right: 5%;
+}
+
+.pN-textAni {
+  -webkit-transform: translate3d(0%, -120%, 0);
+  transform: translate3d(0%, -120%, 0);
+}
+
+.gonglu-nei {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.p1-jiqi {
+  height: 100%;
+  position: relative;
+}
+
+.p1-jiqiguang {
+  height: 64.53%;
+  position: absolute;
+  bottom: 15.06%;
+  left: 29%;
+}
+
+.p1-jiqiguang1 {
+  opacity: 0;
+}
+
+.gonglu-wai {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+
+/*.p1-gonglu-wai{
+  transform: translate3d(-50%, 0%, 0);
+}*/
+
+
+/******************************************************************/
+
+.p2 {
+  background: url(../img/p2bg.jpg);
+  background-size: auto 100%;
+}
+
+.p2 .girlRun {
+  top: 78%;
+  -webkit-transform: translate3d(0%, -50%, 0);
+  transform: translate3d(0%, -50%, 0);
+}
+
+.p2-gonglu-wai{
+  margin-top: -3%;
+  margin-left: -30%;
+}
+.p2-tv{
+
+  height: 100%;
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+}
+
+.p2-zhen {
+  height: 24%;
+  position: absolute;
+  bottom: 14%;
+  left: 56.9%;
+}
+
+.p2-text2 {
+  right: 5%;
+}
+
+.p2bg {
+  margin-left: -15%;
+}
+
+.p2-man {
+  top: 50%;
+  left: 32%;
+  height: 50%;
+  position: absolute;
+  /*opacity: 0;*/
+  transition: top 1.5s;
+  -webkit-transition: top 1.5s;
+}
+
+.p2-caoyuan {
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.p2-shan {
+  height: 100%;
+  position: relative;
+  bottom: 0%;
+  left: 0;
+}
+
+.p2-manAni {
+  -webkit-animation: p2man-action 1s linear both;
+  animation: p2man-action 1s linear both;
+}
+
+
+/******************************************************************/
+
+.p3 {
+  background: url(../img/p3bg.jpg);
+  background-size: auto 100%;
+}
+
+.p3 .girlRun {
+  top: 78%;
+}
+
+.p3-text1 {
+  left: 5%;
+}
+
+.p3bg {
+  margin-left: -20%;
+}
+
+.p3man {
+  height: 62.26%;
+  position: absolute;
+  bottom: 25%;
+  left: 80%;
+}
+
+.p3Woman {
+  bottom: 0%;
+  left: 20%;
+  z-index: 1000;
+}
+
+.p3-nvshen {
+  height: 100%;
+  position: absolute;
+  bottom: -10%;
+  left: 45%;
+}
+
+.p3-yue {
+  height: 14%;
+  position: absolute;
+  top: 10%;
+  left: 80%;
+}
+
+.p3-zhen {
+  height: 12%;
+  position: absolute;
+  top: 46%;
+  left: 32.3%;
+}
+
+
+/******************************************************************/
+
+.p4 {
+  background: url(../img/p4bg.jpg) no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.p4-arobase {
+  height: 60%;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  z-index: 100;
+}
+
+.p4-wds {
+  height: 22.4%;
+  position: absolute;
+  left: 5%;
+  top: 10%;
+}
+
+.p4-bg {
+  height: 50%;
+  position: relative;
+  top: 18%;
+  left: -50%;
+}
+
+.p4-bg1 {
+  height: 35%;
+  position: absolute;
+  top: 40%;
+  left: -25%;
+}
+
+
+/******************************************************************/
+
+.p5 {}
+
+.iphoneWhite {
+  width: 6%;
+  height: 25%;
+  bottom: 0;
+  left: 67%;
+  position: absolute;
+  background: url(../img/iphone_white.png);
+  background-size: 100% 100%;
+}
+
+.iphoneBlack {
+  width: 6%;
+  height: 25%;
+  bottom: 0;
+  left: 45%;
+  position: absolute;
+  background: url(../img/iphone_black.png);
+  background-size: 100% 100%;
+}
+
+.run_car {
+  position: absolute;
+  left: -33%;
+  /*left:3%;*/
+  bottom: 6%;
+  width: 33%;
+  height: auto;
+  z-index: 10000000;
+}
+
+.run_car.active {
+  -webkit-animation: car-action 1.5s ease-in 1 forwards;
+  animation: car-action 1.5s ease-in 1 forwards;
+}
+
+.eye {
+  position: absolute;
+  bottom: 0;
+  background: url(../img/women_eye.jpg) repeat-y;
+  background-size: 100% 200%;
+}
+
+.eye.active {
+  -webkit-animation: eye-action 1s step-end infinite;
+  animation: eye-action 1s step-end infinite;
+}
+
+.textP5 {
+  height: 37%;
+  position: absolute;
+  left: 3%;
+  top: 10%;
+  z-index: 3;
+}
+
+.iphoneCon {
+  width: 83%;
+  height: 72%;
+  overflow: hidden;
+  position: absolute;
+  left: 8%;
+  top: 14%;
+}
+
+
+/******************************************************************/
+
+.p6 {
+  background: url(../img/p6bg.jpg) no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.p6-box {
+  height: 50%;
+  position: absolute;
+  top: 18%;
+  left: 0%;
+  margin-left: -24%;
+}
+
+.p6-man {
+  width: 11%;
+  position: absolute;
+  top: 20%;
+  right: 10%;
+}
+
+.p6-bg {
+  height: 50%;
+  position: relative;
+  top: 18%;
+  left: -50%;
+}
+
+.p6-bg1 {
+  height: 100%;
+  position: relative;
+  top: 12%;
+  left: 0%;
+}
+
+.snow {
+  width: 15%;
+  position: absolute;
+  top: 48%;
+  left: 54%;
+}
+
+.p6-tree {
+  position: absolute;
+  top: 10%;
+  height: 90%;
+  right: 30%;
+}
+
+.p6-wds {
+  /*width: 20%;*/
+  height: 37%;
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  z-index: 1000000;
+}
+
+.wds-active {
+  transition: transform 3s;
+  -webkit-transform: translate(0, 120%);
+  transform: translate(0, 120%);
+}
+
+.p6-tv-box {
+  height: 90%;
+  position: absolute;
+  top: 24%;
+  left: 40%;
+  z-index: 1000;
+}
+
+.p6-tv {
+  height: 85%;
+  -webkit-transition: -webkit-transform 2s 0.9s;
+  transition: transform 2s 0.9s;
+  -webkit-transform: translate(0, 0%);
+  transform: translate(0, 0%);
+}
+
+.p6-tv.p6tv-active {
+  -webkit-transform: translate(0, 100%);
+  transform: translate(0, 100%);
+}
+
+.p6man-active {
+  -webkit-transition: -webkit-transform 2s 3s;
+  transition: transform 2s 3s;
+  -webkit-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
+}
+
+.p6tv-active {
+  transition: transform 2s;
+  -webkit-transform: translate(0, -100%);
+  transform: translate(0, -100%);
+}
+
+.p6bg-active {
+  -webkit-animation: p1-gonglu-action 9s linear both;
+  animation: p1-gonglu-action 9s linear both;
+}
+
+@media (device-height:320px) and (-webkit-min-device-pixel-ratio:2) {
+  .p6-tv-box {
+    left: 36%;
+  }
+  .p6-box {
+    margin-left: -30%;
+  }
+}
+
+
+/******************************************************************/
+
+.p7 {
+  background: url(../img/p3bg.jpg) no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.p7 .haibao {
+  height: 30%;
+  position: absolute;
+  left: 56%;
+  bottom: 0;
+}
+
+.p7 .city {
+  z-index: 3;
+}
+
+.haibao.active {
+  -webkit-animation: haibao-action 8s linear 1 forwards;
+  animation: haibao-action 8s linear 1 forwards;
+}
+
+.p7Back.girlRun {
+  background: url(../img/girl_back.png) no-repeat;
+  background-size: auto 100%;
+  position: absolute;
+  left: 50% !important;
+  -webkit-transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
+}
+
+.p7 .text-describe {
+  height: 15%;
+}
+
+.p7 .shuguang {
+  height: 30%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  display: none;
+}
+
+.shuguang.active {
+  -webkit-animation: shuguang-action 1s linear 1 forwards;
+  animation: shuguang-action 1s linear 1 forwards;
+}
+
+.p7 .show-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1112;
+  display: none;
+}
+
+.yaoqinghan-bg{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
+}
+
+/*.yaoqinghan-bg {
+  display: block;
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  top: 60%;
+  left: 48%;
+  animation: 2s all;
+  -webkit-animation: 2s all;
+  -webkit-transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
+}*/
+
+.yaoqinghan-text {
+  display: none;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.yaoqinghan-text.active {
+  -webkit-animation: yaoqinghan-action 0.9s linear 1 forwards;
+  animation: yaoqinghan-action 0.9s linear 1 forwards;
+}
+
+.p7 .city {
+  left: 50%;
+}
+
+
+/******************************************************************/
+
+.dialog1 {}
+
+.dialog1-box {
+  position: absolute;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.dialog1-btn-get {
+  bottom: 1rem;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, 0%, 0);
+  transform: translate3d(-50%, 0%, 0);
+}
+
+.dialog1-bg {
+  width: 100%;
+}
+
+
+/******************************************************************/
+
+.dialog2 {}
+
+.dialog2-box {
+  position: absolute;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.dialog2-btn-ok {
+  bottom: 1rem;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, 0%, 0);
+  transform: translate3d(-50%, 0%, 0);
+}
+
+.dialog2-bg {
+  width: 100%;
+}
+
+
+/******************************************************************/
+
+.dialog0 {}
+
+.dialog0-hint {
+  width: 100%;
+}
+
+
+/******************************************************************/
+
+.dialog100 {}
+
+
+/*********tongyong*********************************************************/
+
+.girlRun {
+  width: 9.52%;
+  height: 22%;
+  top: 65%;
+  left: -10%;
+  position: absolute;
+  z-index: 999;
+}
+
+.girl-animate {
+  height: 100%;
+  width: 100%;
+  background: url(../img/girl_run.png) repeat-x;
+  background-size: 600% auto;
+}
+
+.girlRun.active .girl-animate {
+  -webkit-animation: girlRun-action 1s step-end infinite;
+  animation: girlRun-action 1s step-end infinite;
+}
+
+.girlRun1.active {
+  width: 7%;
+  left: 45% !important;
+}
+
+.girlRun1.active .girl-animate {
+  background: url(../img/girl_run1.png) repeat-x;
+  background-size: 300% auto;
+  background-position: -200% 0;
+  -webkit-animation: girlRun1-action 0.3s step-end 1 forwards;
+  animation: girlRun1-action 0.3s step-end 1 forwards;
+}
+
+.road {
+  width: 200%;
+  height: 33%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.road.active {
+  -webkit-animation: road-action 13s linear infinite;
+  animation: road-action 13s linear infinite;
+}
+
+.roadP7.active {
+  -webkit-animation: road-action 8s linear 1 forwards;
+  animation: road-action 8s linear 1 forwards;
+}
+
+.city {
+  height: 68%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+}
+
+.city .cityBg {
+  height: 100%;
+}
+
+.city.active {
+  -webkit-animation: city-action 9s linear 1 forwards;
+  animation: city-action 9s linear 1 forwards;
+}
+
+.city1.active {
+  -webkit-animation: city1-action 9s linear 1 forwards;
+  animation: city1-action 9s linear 1 forwards;
+}
+
+.city2.active {
+  -webkit-animation: city2-action 8s linear 1 forwards;
+  animation: city2-action 8s linear 1 forwards;
+}
+
+.text-describe {
+  transform: translate3d(0, -200%, 0);
+  -webkit-transform: translate3d(0, -200%, 0);
+  transition: 5s all;
+}
+
+.text-describe.active {
+  transform: none;
+  -webkit-transform: none;
+}
+
+.weizi-text {
+  position: absolute;
+  z-index: 1111;
+  bottom: 3%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
+}
+
+.weizi-text-p1 {
+  height: 10.23%;
+}
+
+.weizi-text-p3 {
+  height: 7.5%;
+}
+
+.weizi-text-p7 {
+  height: 9.9%;
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no, email=no" />
+  <meta name="full-screen" content="true" />
+  <meta name="screen-orientation" content="portrait" />
+  <meta name="x5-fullscreen" content="true" />
+  <meta name="360-fullscreen" content="true" />
+  <meta name="keywords" CONTENT="本邦科技,www.benbun.com" />
+  <META name="author" content="本邦科技,www.benbun.com">
+  <META name="description" content="本邦科技,www.benbun.com">
+  <title>电影@互联网 遇见全世界</title>
+  <script src="js/fontbase.js?v=7"></script>
+  <!-- 解释：build用来构架项目时候压缩代码 -->
+  <!-- build:css css/main.css -->
+  <link href="css/common.css?v=7" rel="stylesheet" />
+  <link href="css/anim.css?v=7" rel="stylesheet" />
+  <!-- 将所有的keyframes写在这里，方便复用 -->
+  <link href="css/index.css?v=7" rel="stylesheet" />
+  <link href="css/cssLoader.css?v=7" rel="stylesheet" />
+  <!-- endbuild -->
+  <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?294c90eeace079674a9ed615f18458b4";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+</head>
+
+<body>
+  <!-- 如果是在微信里运行，在页面的最上方放一张隐藏的图片，作为默认的分享图片 -->
+  <!-- loading -->
+  <div class="page p0">
+    <div class="p0-loading">
+      <div class=" ball-clip-rotate-pulse ">
+        <div class=" "></div>
+        <div class=" "></div>
+      </div>
+    </div>
+    <p class="p0-process">0%</p>
+  </div>
+  <!-- 第1页 -->
+  <div class="page p1">
+    <!-- 背景层 -->
+    <img class="p1bg pNbg" src="img/p1bg.png">
+    <!-- 公路内层 -->
+    <div class="gonglu-nei p1-gonglu p1-gonglu-nei">
+    </div>
+    <!-- 公路层 -->
+    <img class="p1-road pN-road" src="img/road.jpg">
+    <!-- 孩子层 -->
+    <div class="girlRun">
+      <div class="girl-animate"></div>
+    </div>
+    <!-- 公路外层 -->
+    <div class="gonglu-wai p1-gonglu p1-gonglu-wai">
+    </div>
+    <div class="pN-text">
+      <!-- <img class="p1-text1 pN-text1 pN-textAni" src="img/p1_text1.png"> -->
+      <img class="p1-text2 pN-text1" src="img/p1_text2.png">
+    </div>
+    <img src="img/wenzi1.png" class="weizi-text weizi-text-p1">
+  </div>
+  <!-- 第2页 -->
+  <div class="page p2  ">
+    <!-- 背景层 -->
+    
+    <!-- 公路内层 -->
+    <div class="gonglu-nei p2-gonglu p2-gonglu-nei">
+      <img class="p2-man" src="img/p2_man.png">
+      <img class="p2bg pNbg" src="img/p2bg.png">
+      <!-- <img class="p2-shan pN-shan" src="img/p2_shan.png"> -->
+      <!-- <img class="p2-touying" src="img/p2_touying.jpg"> -->
+    </div>
+    <!-- 公路层 -->
+    <div class="p2-caoyuan">
+      <!-- <img class="p2-road pN-road" src="img/road.jpg"> -->
+      <img class="p2-road p2-shan" src="img/p2_shan.png">
+    </div>
+    <!-- 孩子层 -->
+    <div class="girlRun">
+      <div class="girl-animate"></div>
+    </div>
+    <!-- 公路外层 -->
+    <div class="gonglu-wai p2-gonglu p2-gonglu-wai">
+      <img class="p2-tv" src="img/p2_tv.png?v=1">
+      <img class="p2-zhen" src="img/p2_zhen.gif">
+      <!-- <img class="p2-jiqi" src="img/p2_jiqi.png"> -->
+      <!-- <img class="p2-jiqiguang" src="img/p2_jiqiguang.png"> -->
+    </div>
+    <div class="pN-text">
+      <img class="p2-text2 pN-text1" src="img/p2_text1.png">
+    </div>
+  </div>
+  <!-- 第3页 -->
+  <div class="page p3 ">
+    <!-- 背景层 -->
+    <img class="p3-yue" src="img/p3_yue.png">
+    <!-- 公路内层 -->
+    <div class="gonglu-nei p3-gonglu">
+      <img class="p3bg pNbg" src="img/p3bg.png">
+      <img class="p3-zhen" src="img/p3_zhen.gif">
+    </div>
+    <img class="p3-nvshen" src="img/p3_nvshen.png">
+    <!-- 公路层 -->
+    <img class="p3-road pN-road" src="img/road.jpg">
+    <img class="p3man" src="img/p3_road_man.png">
+    <!-- 孩子层 -->
+    <div class="girlRun">
+      <div class="girl-animate"></div>
+    </div>
+    <!-- <img class="p3man p3Woman" src="img/p3_road_woman.png"> -->
+    <!-- 公路外层 -->
+    <div class="pN-text">
+      <img class="p3-text1 pN-text1" src="img/p3_text1.png">
+    </div>
+    <img src="img/wenzi3.png" class="weizi-text weizi-text-p3">
+  </div>
+  <!-- 第4页 -->
+ <!--  <div class="page p4 ">
+    <img src="img/p4-bg.png" class="p4-bg" alt="">
+    <img src="img/p4-bg1.png" class="p4-bg1" alt="">
+    <div class=" girlRun active">
+      <div class="girl-animate"></div>
+    </div>
+    <img class="roadP4 road" src="img/road.jpg">
+    <img src="img/p4-wds.png" class="p4-wds text-describe" alt="">
+    <img src="img/p4-arobase.png" class="p4-arobase" alt="">
+  </div> -->
+  <!-- 第5页 -->
+  <div class="page p5 ">
+    <div class="city city1">
+      <img src="img/p5bg1.jpg" class="cityBg">
+    </div>
+    <div class="city ">
+      <img src="img/p5bg.png" class="cityBg">
+      <div class="iphoneWhite">
+        <div class="iphoneCon">
+          <img src="img/run_car.png" class="run_car small">
+        </div>
+      </div>
+      <div class="iphoneBlack">
+        <div class="iphoneCon">
+          <img src="img/animate_for_block.gif" class='WH100'>
+        </div>
+      </div>
+      <div class="eye"></div>
+    </div>
+    <img class="road " src="img/road.jpg">
+    <div class="girlRun">
+      <div class="girl-animate"></div>
+    </div>
+    <img src="img/run_car.png" class="run_car">
+    <img src="img/p5_text.png" class="textP5">
+    <!-- <img src="img/p5_text.png" class="textP5 text-describe"> -->
+  </div>
+  <!-- 第6页 -->
+  <div class="page p6">
+    <img src="img/p6-bg.png" class="p6-bg" alt="">
+    <div class="p6-box">
+      <img src="img/p6-man.png?v=7" class="p6-man" alt="">
+      <img src="img/p6-bg1.png" class="p6-bg1" alt="">
+      <img src="img/p6-tree.png" class="p6-tree" alt="">
+      <canvas class="snow"></canvas>
+    </div>
+    <div class="girlRun active">
+      <div class="girl-animate"></div>
+    </div>
+    <img class="roadP6 road" src="img/road.jpg">
+    <div class="p6-tv-box">
+      <img src="img/p6-tv.png" class="p6-tv p6tv-active" alt="">
+    </div>
+    <img src="img/p6-wds.png" class="p6-wds" alt="">
+  </div>
+  <!-- 第7页 -->
+  <div class="page p7 ">
+    <img class="roadP7 road " src="img/road.jpg">
+    <div class="city city2">
+      <img src="img/p7bg.jpg" class="cityBg">
+      <img src="img/haibao.png" class="haibao">
+      <!-- <img src="img/sunshine.png" class="shuguang"> -->
+    </div>
+    <div class="girlRun active">
+      <div class="girl-animate"></div>
+    </div>
+   <!--  <img src="img/p7-text.png" class="textP5 text-describe"> -->
+    <div class="show-image">
+      <img src="img/showImage_bg.jpg" class="yaoqinghan-bg">
+      <img src="img/showImage_text.png" class="yaoqinghan-text">
+    </div>
+    <img src="img/wenzi7.png" class="weizi-text weizi-text-p7">
+  </div>
+  <div class="dialog100 dialog ">
+    <div class="loading-div ab-c"></div>
+  </div>
+  <script>
+  var app = window.app || {
+    currentPage: 0,
+    root: '',
+    pages: {},
+    dialogs: {},
+    audios: {},
+    common: {},
+    isMultiLoad: true, //是否分步加载
+    timer: 8
+  };
+  </script>
+  <!-- <script src="http://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js"></script> -->
+  <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+  <script src="http://cdn.bootcss.com/jquery.touchswipe/1.6.15/jquery.touchSwipe.min.js"></script>
+  <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+  <!-- build:js js/main.js -->
+  <script src="js/loader.js?v=7"></script>
+  <script src="js/ip.audios.js?v=7"></script>
+  <script src="js/ip.bgm.js?v=7"></script>
+  <script src="js/app.js?v=7"></script>
+  <script src="js/common.js?v=7"></script>
+  <script src="js/landscape.js?v=7"></script>
+  <script src="js/p1.js?v=7"></script>
+  <script src="js/p2.js?v=7"></script>
+  <script src="js/p3.js?v=7"></script>
+  <!-- <script src="js/p4.js"></script> -->
+  <script src="js/p5.js?v=7"></script>
+  <script src="js/p6.js?v=7"></script>
+  <script src="js/p7.js?v=7"></script>
+  <script src="js/index.js?v=7"></script>
+  <script src='js/wxshare.js?v=7'></script>
+  <script src="js/jquery.let_it_snow.js?v=7"></script>
+  <!-- <script src='js/landscape.js'></script> -->
+  <script src='js/scroll.js?v=7'></script>
+  <!-- endbuild -->
+  <script type="text/javascript">
+  function getLink() {
+    if (window.location.host.indexOf('dev.benbun.com') >= 0) {
+      return 'http://dev.benbun.com/web/nuomi/siff/';
+    } else {
+      return 'http://w.benbun.com/nuomi/siff/';
+    }
+  }
+  app.link = getLink();
+
+  window.wxshare.config({
+    title: '电影@互联网 遇见全世界',
+    desc: '赴一场约，许一世长情',
+    link: app.link,
+    imgUrl: app.link + 'img/share.jpg'
+  });
+  </script>
+</body>
+
+</html>
