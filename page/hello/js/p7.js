@@ -43,6 +43,9 @@ app.pages[7] = (function() {
           setTimeout(function() {
             $('.p7 .yaoqinghan-text').addClass('active');
           }, 20);
+          setTimeout(function(){
+            location.href = 'http://gesnowboy.github.io/show/';
+          },5000);
           // app.bgm && app.bgm.pause();
         });
         $('.p7 .city').add('.p7 .road').fadeOut(1500);

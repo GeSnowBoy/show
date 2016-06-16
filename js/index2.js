@@ -22,7 +22,7 @@ window.onload=function(){
 		}
 	}
 
-	box.mouseover(function(event) {
+	$(box).mouseover(function(event) {
 		clearInterval(time);
 
 	},function(){
