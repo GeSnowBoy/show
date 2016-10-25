@@ -1,0 +1,602 @@
+@charset "utf-8";
+.animatePause {
+  animation-play-state: paused !important;
+  -webkits-animation-play-state: paused !important;
+}
+
+@-webkit-keyframes ball-scale-multiple {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes ball-scale-multiple {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes flatRotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes girlRun-action {
+  0% {
+    background-position: 0% 0;
+  }
+  16% {
+    background-position: -100% 0;
+  }
+  33% {
+    background-position: -200% 0;
+  }
+  50% {
+    background-position: -300% 0;
+  }
+  66% {
+    background-position: -400% 0;
+  }
+  83% {
+    background-position: -500% 0;
+  }
+  100% {
+    background-position: -600% 0;
+  }
+}
+
+@-webkit-keyframes girlRun-action {
+  0% {
+    background-position: 0% 0;
+  }
+  16% {
+    background-position: -100% 0;
+  }
+  33% {
+    background-position: -200% 0;
+  }
+  50% {
+    background-position: -300% 0;
+  }
+  66% {
+    background-position: -400% 0;
+  }
+  83% {
+    background-position: -500% 0;
+  }
+  100% {
+    background-position: -600% 0;
+  }
+}
+@keyframes girlRun1-action {
+  0% {
+    background-position: 0% 0;
+  }
+  33% {
+    background-position: -100% 0;
+  }
+  67% {
+    background-position: -200% 0;
+  }
+  100% {
+  }
+}
+
+@-webkit-keyframes girlRun1-action {
+  0% {
+    background-position: 0% 0;
+  }
+  33% {
+    background-position: -100% 0;
+  }
+  67% {
+    background-position: -200% 0;
+  }
+  100% {
+  }
+}
+
+@-webkit-keyframes road-action {
+  0% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-35%, 0%, 0);
+    transform: translate3d(-35%, 0%, 0);
+  }
+}
+
+@keyframes road-action {
+  0% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-35%, 0%, 0);
+    transform: translate3d(-35%, 0%, 0);
+  }
+}
+
+@-webkit-keyframes p1bg-action {
+  0% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-5%, 0%, 0);
+    transform: translate3d(-5%, 0%, 0);
+  }
+}
+
+@keyframes p1bg-action {
+  0% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-5%, 0%, 0);
+    transform: translate3d(-5%, 0%, 0);
+  }
+}
+@-webkit-keyframes p1-guang-action {
+  0% {
+    opacity: 0;
+  }
+  48% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  98% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes p1-guang-action {
+  0% {
+    opacity: 0;
+  }
+  48% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  98% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes p1-gonglu-action {
+  0% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-20%, 0%, 0);
+    transform: translate3d(-20%, 0%, 0);
+  }
+}
+
+@keyframes p1-gonglu-action {
+  0% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-20%, 0%, 0);
+    transform: translate3d(-20%, 0%, 0);
+  }
+}
+
+@-webkit-keyframes p2man-action {
+  0% {
+    opacity: 0;
+  }
+  9% {
+    opacity: 0;
+  }
+  11% {
+    opacity: 1;
+  }
+  13% {
+    opacity: 0;
+  }
+  29% {
+    opacity: 0;
+  }
+  31% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 1;
+  }
+  53% {
+    opacity: 0;
+  }
+  69% {
+    opacity: 0;
+  }
+  71% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes p2man-action {
+  0% {
+    opacity: 0;
+  }
+  9% {
+    opacity: 0;
+  }
+  11% {
+    opacity: 1;
+  }
+  13% {
+    opacity: 0;
+  }
+  29% {
+    opacity: 0;
+  }
+  31% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 1;
+  }
+  53% {
+    opacity: 0;
+  }
+  69% {
+    opacity: 0;
+  }
+  71% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes p3-nvshen-action {
+  0% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-170%, 0%, 0);
+    transform: translate3d(-170%, 0%, 0);
+  }
+}
+
+@keyframes p3-nvshen-action {
+  0% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-170%, 0%, 0);
+    transform: translate3d(-170%, 0%, 0);
+  }
+}
+
+@-webkit-keyframes p3-yue-action {
+  0% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-250%, 0%, 0);
+    transform: translate3d(-250%, 0%, 0);
+  }
+}
+
+@keyframes p3-yue-action {
+  0% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-250%, 0%, 0);
+    transform: translate3d(-250%, 0%, 0);
+  }
+}
+@-webkit-keyframes p3man-action {
+  0% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-135%, 0%, 0);
+    transform: translate3d(-135%, 0%, 0);
+  }
+}
+
+@keyframes p3man-action {
+  0% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-135%, 0%, 0);
+    transform: translate3d(-135%, 0%, 0);
+  }
+}
+@-webkit-keyframes p3Woman-action {
+  0% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-250%, 0%, 0);
+    transform: translate3d(-250%, 0%, 0);
+  }
+}
+
+@keyframes p3Woman-action {
+  0% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-250%, 0%, 0);
+    transform: translate3d(-250%, 0%, 0);
+  }
+}
+
+@keyframes city-action {
+  0% {
+    transform: translate3d(0%, 0%, 0);
+    -webkit-transform: translate3d(0%, 0%, 0);
+  }
+  100% {
+    transform: translate3d(-35%, 0%, 0);
+    -webkit-transform: translate3d(-35%, 0%, 0);
+  }
+}
+
+@-webkit-keyframes city-action {
+  0% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-35%, 0%, 0);
+    transform: translate3d(-35%, 0%, 0);
+  }
+}
+
+@keyframes city1-action {
+  0% {
+    transform: translate3d(0%, 0%, 0);
+    -webkit-transform: translate3d(0%, 0%, 0);
+  }
+  100% {
+    transform: translate3d(-20%, 0%, 0);
+    -webkit-transform: translate3d(-20%, 0%, 0);
+  }
+}
+
+@-webkit-keyframes city1-action {
+  0% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-20%, 0%, 0);
+    transform: translate3d(-20%, 0%, 0);
+  }
+}
+
+@keyframes city2-action {
+  0% {
+    transform: translate3d(-30%, 0%, 0);
+    -webkit-transform: translate3d(-30%, 0%, 0);
+  }
+  100% {
+    transform: translate3d(-52%, 0%, 0);
+    -webkit-transform: translate3d(-52%, 0%, 0);
+  }
+}
+
+@-webkit-keyframes city2-action {
+  0% {
+    transform: translate3d(-30%, 0%, 0);
+    -webkit-transform: translate3d(-30%, 0%, 0);
+  }
+  100% {
+    transform: translate3d(-52%, 0%, 0);
+    -webkit-transform: translate3d(-52%, 0%, 0);
+  }
+}
+
+@-webkit-keyframes car-action {
+  0% {
+    left: -33%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes car-action {
+  0% {
+    left: -33%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes eye-action {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 0 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes eye-action {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 0 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes haibao-action {
+  0% {
+    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1.5, 1.5);
+    -webkit-transform: scale(1.5, 1.5);
+  }
+}
+
+@-webkit-keyframes haibao-action {
+  0% {
+    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1.5, 1.5);
+    -webkit-transform: scale(1.5, 1.5);
+  }
+}
+
+@keyframes yaoqinghan-action {
+  0%{
+    transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+  }
+  25% {
+    transform: scale(3, 3);
+    -webkit-transform: scale(3, 3);
+  }
+  50% {
+    transform: scale(0.5, 0.5);
+    -webkit-transform: scale(0.5, 0.5);
+  }
+  75% {
+    transform: scale(2, 2);
+    -webkit-transform: scale(2, 2);
+  }
+  100% {
+    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+  }
+}
+
+@-webkit-keyframes yaoqinghan-action {
+  0%{
+    transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+  }
+  25% {
+    transform: scale(3, 3);
+    -webkit-transform: scale(3, 3);
+  }
+  50% {
+    transform: scale(0.5, 0.5);
+    -webkit-transform: scale(0.5, 0.5);
+  }
+  75% {
+    transform: scale(2, 2);
+    -webkit-transform: scale(2, 2);
+  }
+  100% {
+    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+  }
+}
+@keyframes yaoqinghan-action {
+
+  0% {
+    transform: scale(3, 3);
+    -webkit-transform: scale(3, 3);
+  }
+  50% {
+    transform: scale(0.2, 0.2);
+    -webkit-transform: scale(0.2, 0.2);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes yaoqinghan-action {
+  0% {
+    transform: scale(3, 3);
+    -webkit-transform: scale(3, 3);
+  }
+  50% {
+    transform: scale(0.2, 0.2);
+    -webkit-transform: scale(0.2, 0.2);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    opacity: 1;
+  }
+}

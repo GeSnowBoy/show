@@ -1,0 +1,198 @@
+@charset "utf-8";
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+header,
+ul,
+li,
+dl,
+dt,
+dd,
+ol,
+nav,
+input,
+footer {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #999;
+  overflow-x: hidden;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font: 10px/1.5 Microsoft Yahei, Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul,
+li {
+  list-style: outside none none;
+}
+
+
+/*img{border:none;  vertical-align:middle; width:100%;}*/
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+:focus {
+  outline: 0;
+}
+
+
+/*去掉iPhone上的默认圆角样式*/
+
+input {
+  -webkit-appearance: none;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input {
+  -webkit-appearance: none;
+}
+
+textarea {
+  -webkit-appearance: none;
+}
+
+
+/*去出选中时高亮*/
+
+img,
+a,
+div {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+
+::selection {
+  background: none;
+}
+
+::-moz-selection {
+  background: none;
+}
+
+::-webkit-selection {
+  background: none;
+}
+
+
+/*隐藏bady滚动条*/
+*::-webkit-scrollbar {
+  display: none;
+}
+
+
+/*清除浮动*/
+.clearfix:after {
+  content: "\200B";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+
+/*实用类*/
+.otl {
+  outline: 1px solid red;
+}
+
+.dp-n {
+  display: none;
+}
+
+.dp-b {
+  display: block;
+}
+/*ab-f 全屏*/
+.ab-f {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+/*ab-c 居中*/
+.ab-c {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.op0 {
+  opacity: 0
+}
+
+.selectAvailable {
+  -webkit-tap-highlight-color: rgba(231, 105, 105, 0.7);
+  -webkit-touch-callout: default;
+  -webkit-user-select: text;
+}
+
+.selectAvailable::selection {
+  background: rgba(231, 105, 105, 0.7);
+}
+
+.selectAvailable::-webkit-selection {
+  background: rgba(231, 105, 105, 0.7);
+}
+
