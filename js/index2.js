@@ -12,6 +12,7 @@ window.onload=function(){
 	var time=setInterval(fun,speed);
 	function fun()
 	{
+
 		if(left.offsetWidth-box.scrollLeft<=0)
 		{
 			box.scrollLeft=0;
@@ -26,7 +27,7 @@ window.onload=function(){
 		clearInterval(time);
 
 	},function(){
-		
+
 		time=setInterval(fun, speed);
 	});
 }
