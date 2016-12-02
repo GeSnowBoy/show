@@ -5,6 +5,13 @@
 
 <!-- hack iOS CSS :active style -->
 <body ontouchstart="">
+ <script>
+    (function() {
+        var bgColorArr = ['carbon-fibre', 'starry-night', 'rainbow', 'carbon', 'argyle', 'upholstery', 'steps', 'japanese', 'madras', 'shippo', 'seigaiha'],
+            num = Math.floor(Math.random() * bgColorArr.length);
+        document.querySelector('body').className = bgColorArr[num];
+    }())
+    </script>
 
     {% include nav.html %}
 
