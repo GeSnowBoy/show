@@ -1,37 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/bg.css">
-    <style>
-    * {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-    
-    html,
-    body {
-        height: 100%;
-        width: 100%;
-        font-size: 14px;
-        color: #e50;
-        font-family: '微软雅黑';
-    }
-    </style>
-</head>
+{% include head.html %}
 
-<body>
-    <script>
-    (function() {
-        var bgColorArr = ['carbon-fibre', 'starry-night', 'rainbow', 'carbon', 'argyle', 'upholstery', 'steps', 'japanese', 'madras', 'shippo', 'seigaiha'],
-            num = Math.floor(Math.random() * bgColorArr.length);
-        document.querySelector('body').className = bgColorArr[num];
-    }())
-    </script>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    {% include nav.html %}
+
     {{ content }}
+
+    {% include footer.html %}
+
+
+<!-- Image to hack wechat -->
+<img src="/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
 </body>
 
 </html>
