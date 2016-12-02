@@ -6,10 +6,11 @@
 <!-- hack iOS CSS :active style -->
 <body ontouchstart="">
  <script>
-    (function() {
+    (function bgChange() {
         var bgColorArr = ['carbon-fibre', 'starry-night', 'rainbow', 'carbon', 'argyle', 'upholstery', 'steps', 'japanese', 'madras', 'shippo', 'seigaiha'],
             num = Math.floor(Math.random() * bgColorArr.length);
         document.querySelector('body').className = bgColorArr[num];
+        setTimeout(bgChange, 3000);
     }())
     </script>
 
