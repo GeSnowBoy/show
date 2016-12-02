@@ -4,6 +4,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}css/bg.css">
     <style>
     * {
         margin: 0;
@@ -15,18 +16,21 @@
     body {
         height: 100%;
         width: 100%;
-        background-color: black;
-        background-image: radial-gradient(white, rgba(255, 255, 255, .2) 2px, transparent 40px), radial-gradient(white, rgba(255, 255, 255, .15) 1px, transparent 30px), radial-gradient(white, rgba(255, 255, 255, .1) 2px, transparent 40px), radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1) 2px, transparent 30px);
-        background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
-        background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
         font-size: 14px;
-        color:#fff;
+        color: #e50;
         font-family: '微软雅黑';
     }
     </style>
 </head>
 
 <body>
+    <script>
+    (function() {
+        var bgColorArr = ['carbon-fibre', 'starry-night', 'rainbow', 'carbon', 'argyle', 'upholstery', 'steps', 'japanese', 'madras', 'shippo', 'seigaiha'],
+            num = Math.floor(Math.random() * bgColorArr.length);
+        document.querySelector('body').className = bgColorArr[num];
+    }())
+    </script>
     {{ content }}
 </body>
 
